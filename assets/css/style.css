@@ -1,0 +1,36 @@
+:root{
+  --dark: #374450;
+  --light: #fff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+  }
+  
+  /*made the container for header  */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--dark);
+    color:var(--light);
+  }
+
+  /*calling the nav to order links in a row by justifying content! */
+  nav ul{
+    display:flex;
+    justify-content: space-between;
+    min-width: 300px;
+  }
+  /* changed the color of the nav links */
+  nav a{
+    color: #86d8d8;
+    font-weight: bold;
+  }
+  /* added hover so that changes the nav color when curoser is hovering */
+  nav a:hover{
+    color: var(--light);
+  }
