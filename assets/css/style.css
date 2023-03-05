@@ -1,6 +1,13 @@
 :root{
-  --dark: #374450;
+  --dark: #a4be9d;
   --light:#dca1ff;
+  --workColor: rgb(224, 210, 210);
+  --workBackground: rgb(61, 131, 87);
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,33 +20,35 @@ body {
   }
   
   /*made the container for header  */
-  header {
+  header{
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
     background-color: var(--dark);
-    color:var(--light);
+    color:var(--workBackground);
   }
   header h1{
     position: relative;
     flex-wrap:wrap;
     left:-16px;
-    color:var(--dark);
-    background-color:var(--light);
+    color:var(--workColor);
+    background-color:var(--workBackground);
     padding:10px;
   }
 
   /*calling the nav to order links in a row by justifying content! */
   nav ul{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     min-width: 300px;
   }
   /* changed the color of the nav links */
   nav a{
-    color: var(--light);
+    color: var(--workBackground);
+    font-size: 1em;
     font-weight: bold;
   }
   /* added hover so that changes the nav color when curoser is hovering */
@@ -47,56 +56,168 @@ body {
     color: rgb(107, 109, 145);
   }
 
+  
   .hero-background img{
-    height:800px;
+    height:40em;
     width:100%
   }
   .hero-background h2{
     max-width:80%;
     position: absolute;
-    float:right;
     right: -75%;
-    top:850px;
-    background-color: var(--light);
-    color:var(--dark);
-    padding:10px;
+    top:25em;
+    background-color: var(--workBackground);
+    color:var(--workColor);
+    padding:0.75em;
     margin-right: 81%;
   }
-  .content h2,h3,h4 {
+
+  .aboutMe h2{
     position: relative;
-    color:var(--light);
-    padding-right: 10px;
-    margin:10%;
-    font-size:30px;
-    
+    width:4em;
+    text-align: right;
+    color:var(--workBackground);
+    padding-left:2em;
+    padding-right: 4em;
+    margin:1.75em;
+    font-size:2em;
+    border-right: 0.10em solid var(--workBackground);
+    padding:0.25em;
+    height:5em;
+    margin-left: 5em;
   }
-  .content h2,h3,h4 ::before {
-    display:inline-block;
-    border-right: 4px solid var(--light);
-    height:200px;
-    margin-left: 4em;
-  }
-  .content p{
-    color:rgb(235, 200, 238);
+  p{
+    display: flex;
+    flex-wrap:wrap;
+    color: var(--workBackground);
     position: relative;
-    width:700px;
-    top:-400px;
-    left: 20%;
-    padding: 10px;
-    
+    max-width:75em;
+    top: -12em;
+    right:-20em;
   }
-  .content nav{
+  .work h3{
+    position: relative;
+    width:4em;
+    text-align: right;
+    color:var(--workBackground);
+    margin:-5em;
+    font-size:2em;
+    border-right: 0.10em solid var(--workBackground);
+    padding:0.25em;
+    height:24em;
+    margin-left: 5em;
+  } 
+
+ 
+  .report img{
+    position: relative;
+    max-height: 25em;
+    width: 75em;
+    top: -37.5em;
+    right:-21em;
+    border:0.3em solid var(--workBackground);
+    opacity: 10;
+    filter:opacity(50%);
+
+  }
+  .report h3{
+    display: flex;
+    flex-wrap: wrap;
+    font-size:2em; 
+    position: relative;
+    flex-wrap:wrap;
+    left:10.7em;
+    color:var(--workColor);
+    background-color:var(--workBackground);
+    padding:.7em;
+    max-width:8em;
+    top:-23em;
+  }
+  .report h4{
+    font-size:1em; 
+    position: relative;
+    flex-wrap:wrap;
+    left:30em;
+    color:var(--workColor);
+    top:-47.5em;
+  }
+  .ledWall img{
+    position: absolute;
+    max-height:10em;
+    width:37.5em;
+    top: 88em;
+    right: 49.5em;
+    border:0.3em solid var(--workBackground);
+    opacity: 10;
+    filter:opacity(50%);
+  }
+  .Calc img{
+    position: absolute;
+    max-height:10em;
+    width:37.5em;
+    top: 88em;
+    right: 11.5em;
+    border:0.3em solid var(--workBackground);
+    opacity: 10;
+    filter:opacity(50%);
+  }
+  .puzzle img{
+    position: absolute;
+    max-height:10em;
+    width:37.5em;
+    top: 99em;
+    right: 49.5em;
+    border:0.3em solid var(--workBackground);
+    opacity: 10;
+    filter:opacity(50%);
+  }
+  .run img{
+    position: absolute;
+    max-height:10em;
+    width:37.5em;
+    top: 99em;
+    right: 11.5em;
+    border:0.3em solid var(--workBackground);
+    opacity: 10;
+    filter:opacity(50%);
+  }
+  .report img:hover, .ledWall img:hover, .Calc img:hover, .run img:hover, .puzzle img:hover{
+    filter: var(--workColor);
+    filter: none;
+    transition: 1s ease;
+  }
+ 
+.contactMe h5{
+  position: relative;
+  width:6.5em;
+  padding: 0.3em;
+  text-align: right;
+  color:var(--workBackground);
+  margin:6em;
+  font-size:2em;
+  border-right: 0.1em solid var(--workBackground);
+  height:3em;
+  margin-left:2.5em;
+
+  }
+  
+ .contactMe nav{
     text-align: justify;
-    text-align-last: right;
-    padding: 15px;
-    margin-right:20px;
-    text-align:center;
+    position: relative;
+    max-width:50em;
+    padding-left:2em;
+    padding-right: 4em;
+    top:-15em;
+    left: 20%;
+    padding: -15em;
     font-size: 20px;
     font-family:'Courier New', Courier, monospace
 
   }
-  .content nav ul li{
-    display: inline-flex;
-    justify-content: flex-end;
-    margin: 0px 10px;
+  .contactMe nav ul li{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 1em;
+    left:-50em;
   }
