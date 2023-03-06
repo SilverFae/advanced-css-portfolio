@@ -4,16 +4,9 @@
   --workColor: rgb(224, 210, 210);
   --workBackground: rgb(61, 131, 87);
 }
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-}
+
 
 body {
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction: column;
     line-height: 1.3;
     background-color: var(--dark);
     font-family: 'Courier New', Courier, monospace;
@@ -39,11 +32,12 @@ body {
   }
 
   /*calling the nav to order links in a row by justifying content! */
+  
   nav ul{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-width: 300px;
+    width: 20em;
   }
   /* changed the color of the nav links */
   nav a{
@@ -62,14 +56,13 @@ body {
     width:100%
   }
   .hero-background h2{
-    max-width:80%;
     position: absolute;
-    right: -75%;
+    right: 4%;
     top:25em;
     background-color: var(--workBackground);
     color:var(--workColor);
     padding:0.75em;
-    margin-right: 81%;
+    margin:auto;
   }
 
   .aboutMe h2{
@@ -121,62 +114,59 @@ body {
 
   }
   .report h3{
-    display: flex;
-    flex-wrap: wrap;
-    font-size:2em; 
-    position: relative;
-    flex-wrap:wrap;
-    left:10.7em;
+    position: absolute;
+    right: 74.95em;
+    top:75em;
+    background-color: var(--workBackground);
     color:var(--workColor);
-    background-color:var(--workBackground);
-    padding:.7em;
-    max-width:8em;
-    top:-23em;
+    padding:1.5em;
+    margin:auto;
   }
   .report h4{
-    font-size:1em; 
-    position: relative;
-    flex-wrap:wrap;
-    left:30em;
+    position: absolute;
+    right: 4%;
+    top:100em;
+    background-color: var(--workBackground);
     color:var(--workColor);
-    top:-47.5em;
+    padding:1em;
+    margin:auto;
   }
   .ledWall img{
-    position: absolute;
+    position: relative;
     max-height:10em;
     width:37.5em;
-    top: 88em;
-    right: 49.5em;
+    top: -37em;
+    right: -21em;
     border:0.3em solid var(--workBackground);
     opacity: 10;
     filter:opacity(50%);
   }
   .Calc img{
-    position: absolute;
+    position: relative;
     max-height:10em;
     width:37.5em;
-    top: 88em;
-    right: 11.5em;
+    top: -54.34em;
+    right: -59em;
     border:0.3em solid var(--workBackground);
     opacity: 10;
     filter:opacity(50%);
   }
   .puzzle img{
-    position: absolute;
+    position: relative;
     max-height:10em;
     width:37.5em;
-    top: 99em;
-    right: 49.5em;
+    top: -60.2em;
+    right: -21em;
     border:0.3em solid var(--workBackground);
     opacity: 10;
     filter:opacity(50%);
   }
   .run img{
-    position: absolute;
+    position: relative;
     max-height:10em;
     width:37.5em;
-    top: 99em;
-    right: 11.5em;
+    top: -70.7em;
+    right: -59em;
     border:0.3em solid var(--workBackground);
     opacity: 10;
     filter:opacity(50%);
@@ -187,7 +177,7 @@ body {
     transition: 1s ease;
   }
  
-.contactMe h5{
+.contactMe h8{
   position: relative;
   width:6.5em;
   padding: 0.3em;
@@ -204,7 +194,7 @@ body {
  .contactMe nav{
     text-align: justify;
     position: relative;
-    max-width:50em;
+    width:50em;
     padding-left:2em;
     padding-right: 4em;
     top:-15em;
